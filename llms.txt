@@ -1,0 +1,12 @@
+# Papa Perez FC
+
+> Official website of Papa Perez FC, an amateur football (soccer) club founded in 2025 at the Institute of Management Sciences (IMSciences), Peshawar, Pakistan. Club motto: "Loved, Despised, Never Ignored."
+
+## Pages
+
+- [Home](https://aadilkk18.github.io/PapaPerez/): About the club, full squad list with positions and shirt numbers, and contact details.
+
+## Contact
+
+- Instagram: https://www.instagram.com/papaperezfc
+- Location: IMSciences, Peshawar, Khyber Pakhtunkhwa, Pakistan
