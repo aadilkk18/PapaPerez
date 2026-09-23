@@ -22,33 +22,57 @@
 
   <link rel="icon" href="logo.jpg" type="image/jpeg" />
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Structured data: helps Google/Gemini/ChatGPT understand what this page is -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SportsTeam",
-    "name": "Papa Perez FC",
-    "sport": "Football (Soccer)",
-    "foundingDate": "2025",
-    "slogan": "Loved, Despised, Never Ignored",
-    "url": "https://aadilkk18.github.io/PapaPerez/",
-    "logo": "https://aadilkk18.github.io/PapaPerez/logo.jpg",
-    "location": {
-      "@type": "Place",
-      "name": "Institute of Management Sciences (IMSciences), Peshawar",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Peshawar",
-        "addressRegion": "Khyber Pakhtunkhwa",
-        "addressCountry": "PK"
-      }
+     <!-- Structured data: helps Google understand Papa Perez FC -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsTeam",
+      "name": "Papa Perez FC",
+      "sport": "Football (Soccer)",
+      "foundingDate": "2025",
+      "slogan": "Loved, Despised, Never Ignored",
+      "url": "https://aadilkk18.github.io/PapaPerez/",
+      "logo": "https://aadilkk18.github.io/PapaPerez/logo.jpg",
+      "location": {
+        "@type": "Place",
+        "name": "Institute of Management Sciences (IMSciences), Peshawar",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Peshawar",
+          "addressRegion": "Khyber Pakhtunkhwa",
+          "addressCountry": "PK"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/papaperezfc/"
+      ]
     },
-    "sameAs": [
-      "https://www.instagram.com/papaperezfc"
-    ]
-  }
-  </script>
+    {
+      "@type": "Organization",
+      "name": "Papa Perez FC",
+      "url": "https://aadilkk18.github.io/PapaPerez/",
+      "logo": "https://aadilkk18.github.io/PapaPerez/logo.jpg",
+      "founder": {
+        "@type": "Person",
+        "name": "Aadil Kamal Khan",
+        "url": "https://www.linkedin.com/in/aadil-kamal-khan-ai/"
+      },
+      "leader": {
+        "@type": "Person",
+        "name": "Farhan Aziz",
+        "jobTitle": "President",
+        "startDate": "2026"
+      },
+      "sameAs": [
+        "https://www.instagram.com/papaperezfc/"
+      ]
+    }
+  ]
+}
+</script>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
