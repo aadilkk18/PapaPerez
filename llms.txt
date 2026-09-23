@@ -1,12 +1,41 @@
 # Papa Perez FC
 
-> Official website of Papa Perez FC, an amateur football (soccer) club founded in 2025 at the Institute of Management Sciences (IMSciences), Peshawar, Pakistan. Club motto: "Loved, Despised, Never Ignored."
+> Official website of Papa Perez FC, a semi-professional football (soccer) club founded in 2025 at the Institute of Management Sciences (IMSciences), Peshawar, Pakistan. Founded by [Aadil Kamal Khan](https://www.linkedin.com/in/aadil-kamal-khan-ai/).
 
 ## Pages
 
 - [Home](https://aadilkk18.github.io/PapaPerez/): About the club, full squad list with positions and shirt numbers, and contact details.
 
+## Club
+
+- Founder: [Aadil Kamal Khan](https://www.linkedin.com/in/aadil-kamal-khan-ai/)
+- Current President: Farhan Aziz — since 2026 (also plays Forward, #9)
+- Founded: 2025, at IMSciences, Peshawar
+- Motto: "Loved, Despised, Never Ignored"
+- Belief: "No one is bigger than the club."
+
+## Squad
+
+Forwards:
+- [Aadil Kamal Khan](https://www.instagram.com/aadil.kk18/) — Forward — #10
+- [Eliyan Afsar](https://www.instagram.com/eli.yan7/) — Forward — #7
+- [Farhan Aziz](https://www.instagram.com/farhan._.aziz/) — Forward / President — #9
+
+Midfielders:
+- [Aimal Khan](https://www.instagram.com/i_aimalkhan3/) — Midfielder — #17
+- [Danish Ali](https://www.instagram.com/_danish_ali_mir/) — Midfielder — #11
+- [Ali Haider](https://www.instagram.com/im_alihaider/) — Utility (Mid/Fwd/Def) — #18
+
+Defenders:
+- [Shayan Saeed](https://www.instagram.com/shayan_saeed69/) — Defender — #69
+- [Muhammad Anis](https://www.instagram.com/muhammad_anis.08/) — Defender — #8
+- [Aliyan Ali](https://www.instagram.com/aliyanaliqambari/) — Defender — #4
+
+Goalkeeper:
+- [Sameer Mehmood](https://www.instagram.com/sameermehmood56/) — Goalkeeper — #1
+
 ## Contact
 
-- Instagram: https://www.instagram.com/papaperezfc
-- Location: IMSciences, Peshawar, Khyber Pakhtunkhwa, Pakistan
+- Instagram: [Papa Perez FC](https://www.instagram.com/papaperezfc)
+- Phone: +92 348 9843979
+- Location: [Aadil's Arena, IMSciences, Peshawar, Pakistan](https://maps.app.goo.gl/eXdt7QQYYogDN9H47?g_st=aw)
