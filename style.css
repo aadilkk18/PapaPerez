@@ -375,16 +375,12 @@ h2 {
 }
 .player-num {
   position: absolute; bottom: 20px; right: 20px; z-index: 2;
-  font-family: var(--display); font-weight: 700; line-height: 1;
+  font-family: 'Allerta Stencil', sans-serif; 
+  font-weight: 400; line-height: 1;
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   
-  /* Reverted to fully transparent inside */
   color: transparent; 
-  
-  /* Kept the slightly thicker gold outline for a premium look */
   -webkit-text-stroke: 1.5px rgba(240, 207, 122, 0.9);
-  
-  /* Removed the text-shadow completely */
   
   transition: color .5s, transform .5s var(--ease);
 }
