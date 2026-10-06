@@ -463,3 +463,19 @@ footer .footer-sub { color: var(--gold-deep); font-size: 0.7rem; }
   h2 { font-size: 1.7rem; }
   .about-quote { font-size: 1.25rem; }
 }
+
+/* Facts block + FAQ */
+.facts-title { margin: 2.5rem 0 1rem; }
+.facts { display: grid; gap: .5rem; margin: 0; max-width: 760px; }
+.facts > div {
+  display: grid; grid-template-columns: 9rem 1fr; gap: 1rem;
+  padding: .6rem 0; border-bottom: 1px solid rgba(128,128,128,.3);
+}
+.facts dt { font-weight: 600; opacity: .75; }
+.facts dd { margin: 0; }
+.faq-list { max-width: 760px; }
+.faq-list h3 { margin: 1.8rem 0 .4rem; }
+.faq-list p { margin: 0; line-height: 1.7; }
+@media (max-width: 600px) {
+  .facts > div { grid-template-columns: 1fr; gap: .15rem; }
+}
