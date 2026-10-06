@@ -501,11 +501,14 @@ h2 {
 
 @media (max-width: 600px) {
   .pos-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-  .player:last-child:nth-child(odd) {
+  
+  /* We changed this from 'last-child' to 'first-child' so the FIRST person in each group sits alone in the middle */
+  .player:first-child:nth-last-child(odd) {
     grid-column: 1 / -1;
     justify-self: center;
     width: calc(50% - 7px);
   }
+  
   .player-info { padding: 14px; }
   .player-name { font-size: 1rem; }
   .player-num { font-size: 2.6rem; right: 10px; }
