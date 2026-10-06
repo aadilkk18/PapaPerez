@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script>document.documentElement.classList.add('js');</script>
 
   <title>Papa Perez FC | Official Site – IMSciences Peshawar Football Club</title>
   <meta name="description" content="Papa Perez FC, the Home of Absolute Football. A football club at IMSciences Peshawar, founded in 2025. Meet the squad, read the club story and get in touch." />
   <meta name="author" content="Papa Perez FC" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#111111" />
+  <meta name="theme-color" content="#070706" />
+  <meta name="color-scheme" content="dark" />
   <link rel="canonical" href="https://aadilkk18.github.io/PapaPerez/" />
 
   <!-- Open Graph / social previews -->
@@ -131,18 +133,21 @@
 </head>
 <body>
 
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
   <!-- NAVBAR -->
-  <nav aria-label="Main navigation">
-    <div class="logo">
-      <img src="logo.jpg" alt="Papa Perez FC logo" class="nav-logo"/>
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Papa Perez FC home">
+      <img src="logo.jpg" alt="Papa Perez FC logo" class="brand-logo" width="40" height="40"/>
       <span>Papa Perez FC</span>
-    </div>
-    <ul>
+    </a>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#squad">Squad</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a class="nav-cta" href="https://www.instagram.com/papaperezfc?igsh=OG8wYnJqempicmRm" target="_blank" rel="noopener noreferrer">Follow</a>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
@@ -154,301 +159,241 @@
     <a href="#squad" onclick="toggleMenu()">Squad</a>
     <a href="#faq" onclick="toggleMenu()">FAQ</a>
     <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a class="mobile-cta" href="https://www.instagram.com/papaperezfc?igsh=OG8wYnJqempicmRm" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
   </div>
 
   <!-- HERO -->
-  <header class="hero">
-    <div class="hero-monogram" aria-hidden="true">PAPA</div>
+  <header class="hero" id="top">
+    <svg class="hero-pitch" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+      <line x1="600" y1="-40" x2="600" y2="840"/>
+      <circle cx="600" cy="400" r="190"/>
+      <circle cx="600" cy="400" r="5" fill="currentColor"/>
+      <rect x="-20" y="230" width="190" height="340"/>
+      <rect x="1030" y="230" width="190" height="340"/>
+    </svg>
+    <div class="hero-glow" aria-hidden="true"></div>
+
     <div class="hero-content">
-      <div class="crest-frame">
-        <img src="logo.jpg" alt="Papa Perez FC crest" class="hero-logo" fetchpriority="high"/>
+      <div class="crest rise" style="--d:0s">
+        <img src="logo.jpg" alt="Papa Perez FC crest" width="164" height="164" fetchpriority="high"/>
       </div>
-      <h1>Papa Perez FC</h1>
-      <p class="tagline">Loved · Despised · Never Ignored</p>
-      <div class="hero-divider"></div>
-      <p class="hero-sub">Est. 2025 · Peshawar, Pakistan</p>
-      <a href="#about" class="btn">Enter the Glory</a>
+      <h1>
+        <span class="h1-word rise" style="--d:.15s">Papa</span>
+        <span class="h1-word h1-gold rise" style="--d:.25s">Perez</span>
+        <span class="h1-word rise" style="--d:.35s">FC</span>
+      </h1>
+      <p class="tagline rise" style="--d:.5s">Loved · Despised · Never Ignored</p>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <p class="hero-sub rise" style="--d:.7s">Est. 2025 · Peshawar, Pakistan</p>
+      <div class="hero-cta rise" style="--d:.85s">
+        <a class="btn btn--primary" href="https://www.instagram.com/papaperezfc?igsh=OG8wYnJqempicmRm" target="_blank" rel="noopener noreferrer">
+          Follow on Instagram
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#squad">Meet the Squad</a>
+      </div>
     </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
   </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>Loved</span><i>✦</i><span>Despised</span><i>✦</i><span>Never Ignored</span><i>✦</i>
+        <span>Loved</span><i>✦</i><span>Despised</span><i>✦</i><span>Never Ignored</span><i>✦</i>
+      </div>
+      <div class="marquee-group">
+        <span>Loved</span><i>✦</i><span>Despised</span><i>✦</i><span>Never Ignored</span><i>✦</i>
+        <span>Loved</span><i>✦</i><span>Despised</span><i>✦</i><span>Never Ignored</span><i>✦</i>
+      </div>
+    </div>
+  </div>
 
   <main>
 
     <!-- ABOUT -->
-    <section id="about">
-      <div class="section-inner">
-        <p class="eyebrow">The Club</p>
-        <h2>About Papa Perez FC</h2>
+    <section id="about" class="section">
+      <div class="wrap">
+        <p class="eyebrow reveal">01 · The Club</p>
+        <h2 class="reveal" style="--d:.08s">About Papa Perez FC</h2>
 
-        <div class="about-copy about-copy--single">
-          <p><strong>Papa Perez FC is a football club based at the Institute of Management Sciences (IMSciences) in Peshawar, Pakistan, founded in 2025 by Aadil Kamal Khan.</strong> Also known as the Home of Absolute Football, it is more than just a club; it is a movement forged in passion and purpose, and a symbol of pure, uncompromising football values.</p>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="lead reveal"><strong>Papa Perez FC is a football club based at the Institute of Management Sciences (IMSciences) in Peshawar, Pakistan, founded in 2025 by Aadil Kamal Khan.</strong> Also known as the Home of Absolute Football, it is more than just a club; it is a movement forged in passion and purpose, and a symbol of pure, uncompromising football values.</p>
+            <p class="reveal" style="--d:.08s">Here, unity is unbreakable, discipline is non-negotiable, and respect for the game runs through every heartbeat. Every player fights for the badge, every moment is earned, and every victory is shared.</p>
+            <p class="reveal" style="--d:.16s">Papa Perez FC is where passion meets pride, where brotherhood is built on the pitch, and where the game is played the way it was meant to be—fearless, honest, and absolute.</p>
+          </div>
 
-          <blockquote class="about-quote">No one is bigger than the club.</blockquote>
-
-          <p>Here, unity is unbreakable, discipline is non-negotiable, and respect for the game runs through every heartbeat. Every player fights for the badge, every moment is earned, and every victory is shared.</p>
-
-          <p>Papa Perez FC is where passion meets pride, where brotherhood is built on the pitch, and where the game is played the way it was meant to be—fearless, honest, and absolute.</p>
+          <aside class="facts-card reveal" style="--d:.12s">
+            <h3 class="facts-title">Papa Perez FC at a glance</h3>
+            <dl class="facts">
+              <div><dt>Full name</dt><dd>Papa Perez FC</dd></div>
+              <div><dt>Also known as</dt><dd>Home of Absolute Football</dd></div>
+              <div><dt>Sport</dt><dd>Football (soccer)</dd></div>
+              <div><dt>Founded</dt><dd>2025</dd></div>
+              <div><dt>Founder</dt><dd>Aadil Kamal Khan</dd></div>
+              <div><dt>President</dt><dd>Farhan Aziz (since 2026)</dd></div>
+              <div><dt>Based at</dt><dd>Institute of Management Sciences (IMSciences), Peshawar, Khyber Pakhtunkhwa, Pakistan</dd></div>
+              <div><dt>Home ground</dt><dd>Aadil's Arena, IMSciences</dd></div>
+              <div><dt>Slogan</dt><dd>Loved · Despised · Never Ignored</dd></div>
+            </dl>
+          </aside>
         </div>
 
-        <h3 class="facts-title">Papa Perez FC at a glance</h3>
-        <dl class="facts">
-          <div><dt>Full name</dt><dd>Papa Perez FC</dd></div>
-          <div><dt>Also known as</dt><dd>Home of Absolute Football</dd></div>
-          <div><dt>Sport</dt><dd>Football (soccer)</dd></div>
-          <div><dt>Founded</dt><dd>2025</dd></div>
-          <div><dt>Founder</dt><dd>Aadil Kamal Khan</dd></div>
-          <div><dt>President</dt><dd>Farhan Aziz (since 2026)</dd></div>
-          <div><dt>Based at</dt><dd>Institute of Management Sciences (IMSciences), Peshawar, Khyber Pakhtunkhwa, Pakistan</dd></div>
-          <div><dt>Home ground</dt><dd>Aadil's Arena, IMSciences</dd></div>
-          <div><dt>Slogan</dt><dd>Loved · Despised · Never Ignored</dd></div>
-        </dl>
+        <blockquote class="statement reveal">
+          <p>No one is bigger than the club.</p>
+        </blockquote>
       </div>
     </section>
 
     <!-- SQUAD -->
-    <section id="squad" class="dark-section">
-      <div class="section-inner">
-        <p class="eyebrow">The Squad</p>
-        <h2>Papa Perez FC Line-Up</h2>
-        <p class="squad-hint">Tap a card to reveal the player</p>
+    <section id="squad" class="section section--alt">
+      <div class="wrap">
+        <p class="eyebrow reveal">02 · The Squad</p>
+        <h2 class="reveal" style="--d:.08s">Papa Perez FC Line-Up</h2>
 
-        <div class="formation">
-
-          <div class="formation-row" data-row="forwards">
-            <span class="row-label">Forwards</span>
-            <div class="cards">
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Aadil Kamal Khan, Forward, number 10">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">10</div>
-                    <div class="card-name">Aadil Kamal Khan</div>
-                    <div class="card-pos">Forward</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('Aadil.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Aadil Kamal Khan</div>
-                      <div class="card-back-pos">Forward · #10</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Eliyan Afsar, Forward, number 7">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">7</div>
-                    <div class="card-name">Eliyan Afsar</div>
-                    <div class="card-pos">Forward</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('eliyan.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Eliyan Afsar</div>
-                      <div class="card-back-pos">Forward · #7</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Farhan Aziz, Forward and President, number 9">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">9</div>
-                    <div class="card-name">Farhan Aziz</div>
-                    <div class="card-pos">Forward / President</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('farhan.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Farhan Aziz</div>
-                      <div class="card-back-pos">Forward · #9</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="pos-group">
+          <h3 class="pos-label reveal">Forwards</h3>
+          <div class="pos-grid">
+            <article class="player reveal" style="--d:0s">
+              <img src="Aadil.jpg" alt="Papa Perez FC forward, number 10" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">10</span>
+              <div class="player-info"><span class="player-name">Aadil Kamal Khan</span><span class="player-pos">Forward</span></div>
+            </article>
+            <article class="player reveal" style="--d:.08s">
+              <img src="eliyan.jpg" alt="Papa Perez FC forward, number 7" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">7</span>
+              <div class="player-info"><span class="player-name">Eliyan Afsar</span><span class="player-pos">Forward</span></div>
+            </article>
+            <article class="player reveal" style="--d:.16s">
+              <img src="farhan.jpg" alt="Papa Perez FC forward and president, number 9" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">9</span>
+              <div class="player-info"><span class="player-name">Farhan Aziz</span><span class="player-pos">Forward · President</span></div>
+            </article>
           </div>
+        </div>
 
-          <div class="formation-row" data-row="mid">
-            <span class="row-label">Midfielders</span>
-            <div class="cards">
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Aimal Khan, Midfielder, number 17">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">17</div>
-                    <div class="card-name">Aimal Khan</div>
-                    <div class="card-pos">Midfielder</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('aimal.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Aimal Khan</div>
-                      <div class="card-back-pos">Midfielder · #17</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Danish Ali, Midfielder, number 11">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">11</div>
-                    <div class="card-name">Danish Ali</div>
-                    <div class="card-pos">Midfielder</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('danish.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Danish Ali</div>
-                      <div class="card-back-pos">Midfielder · #11</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Ali Haider, Midfielder Forward Defender, number 18">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">18</div>
-                    <div class="card-name">Ali Haider</div>
-                    <div class="card-pos">Mid / Fwd / Def</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('ali.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Ali Haider</div>
-                      <div class="card-back-pos">Utility · #18</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="pos-group">
+          <h3 class="pos-label reveal">Midfielders</h3>
+          <div class="pos-grid">
+            <article class="player reveal" style="--d:0s">
+              <img src="aimal.jpg" alt="Papa Perez FC midfielder, number 17" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">17</span>
+              <div class="player-info"><span class="player-name">Aimal Khan</span><span class="player-pos">Midfielder</span></div>
+            </article>
+            <article class="player reveal" style="--d:.08s">
+              <img src="danish.jpg" alt="Papa Perez FC midfielder, number 11" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">11</span>
+              <div class="player-info"><span class="player-name">Danish Ali</span><span class="player-pos">Midfielder</span></div>
+            </article>
+            <article class="player reveal" style="--d:.16s">
+              <img src="ali.jpg" alt="Papa Perez FC utility player, number 18" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">18</span>
+              <div class="player-info"><span class="player-name">Ali Haider</span><span class="player-pos">Utility</span></div>
+            </article>
           </div>
+        </div>
 
-          <div class="formation-row" data-row="def">
-            <span class="row-label">Defenders</span>
-            <div class="cards">
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Shayan Saeed, Defender, number 69">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">69</div>
-                    <div class="card-name">Shayan Saeed</div>
-                    <div class="card-pos">Defender</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('shayan.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Shayan Saeed</div>
-                      <div class="card-back-pos">Defender · #69</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Muhammad Anis, Defender, number 8">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">8</div>
-                    <div class="card-name">Muhammad Anis</div>
-                    <div class="card-pos">Defender</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('anis.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Muhammad Anis</div>
-                      <div class="card-back-pos">Defender · #8</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Aliyan Ali, Defender, number 4">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">4</div>
-                    <div class="card-name">Aliyan Ali</div>
-                    <div class="card-pos">Defender</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('aliyan.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Aliyan Ali</div>
-                      <div class="card-back-pos">Defender · #4</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="pos-group">
+          <h3 class="pos-label reveal">Defenders</h3>
+          <div class="pos-grid">
+            <article class="player reveal" style="--d:0s">
+              <img src="shayan.jpg" alt="Papa Perez FC defender, number 69" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">69</span>
+              <div class="player-info"><span class="player-name">Shayan Saeed</span><span class="player-pos">Defender</span></div>
+            </article>
+            <article class="player reveal" style="--d:.08s">
+              <img src="anis.jpg" alt="Papa Perez FC defender, number 8" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">8</span>
+              <div class="player-info"><span class="player-name">Muhammad Anis</span><span class="player-pos">Defender</span></div>
+            </article>
+            <article class="player reveal" style="--d:.16s">
+              <img src="aliyan.jpg" alt="Papa Perez FC defender, number 4" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">4</span>
+              <div class="player-info"><span class="player-name">Aliyan Ali</span><span class="player-pos">Defender</span></div>
+            </article>
           </div>
+        </div>
 
-          <div class="formation-row" data-row="gk">
-            <span class="row-label">Goalkeeper</span>
-            <div class="cards">
-              <div class="card-wrapper" tabindex="0" role="button" aria-label="Sameer Mehmood, Goalkeeper, number 1">
-                <div class="card">
-                  <div class="card-front">
-                    <div class="card-num">1</div>
-                    <div class="card-name">Sameer Mehmood</div>
-                    <div class="card-pos">Goalkeeper</div>
-                  </div>
-                  <div class="card-back" style="background-image: url('sameer.jpg')">
-                    <div class="card-back-info">
-                      <div class="card-back-name">Sameer Mehmood</div>
-                      <div class="card-back-pos">Goalkeeper · #1</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="pos-group">
+          <h3 class="pos-label reveal">Goalkeeper</h3>
+          <div class="pos-grid">
+            <article class="player reveal" style="--d:0s">
+              <img src="sameer.jpg" alt="Papa Perez FC goalkeeper, number 1" width="600" height="800" loading="lazy" decoding="async"/>
+              <span class="player-num" aria-hidden="true">1</span>
+              <div class="player-info"><span class="player-name">Sameer Mehmood</span><span class="player-pos">Goalkeeper</span></div>
+            </article>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq">
-      <div class="section-inner">
-        <p class="eyebrow">Quick Answers</p>
-        <h2>Frequently Asked Questions</h2>
+    <section id="faq" class="section">
+      <div class="wrap faq-grid">
+        <div class="faq-head">
+          <p class="eyebrow reveal">03 · Quick Answers</p>
+          <h2 class="reveal" style="--d:.08s">Frequently Asked Questions</h2>
+        </div>
 
         <div class="faq-list">
-          <h3>What is Papa Perez FC?</h3>
-          <p>Papa Perez FC, also known as the Home of Absolute Football, is a football club based at the Institute of Management Sciences (IMSciences) in Peshawar, Pakistan. It was founded in 2025.</p>
-
-          <h3>Where is Papa Perez FC based?</h3>
-          <p>The club is based at IMSciences in Peshawar, Khyber Pakhtunkhwa, Pakistan. Its home ground is Aadil's Arena at IMSciences.</p>
-
-          <h3>Who is the president of Papa Perez FC?</h3>
-          <p>Farhan Aziz has been president since 2026. He also plays as a forward, wearing number 9.</p>
-
-          <h3>What is the motto of Papa Perez FC?</h3>
-          <p>The slogan is "Loved, Despised, Never Ignored", and the club's guiding principle is "No one is bigger than the club."</p>
+          <div class="faq-item reveal">
+            <h3>What is Papa Perez FC?</h3>
+            <p>Papa Perez FC, also known as the Home of Absolute Football, is a football club based at the Institute of Management Sciences (IMSciences) in Peshawar, Pakistan. It was founded in 2025.</p>
+          </div>
+          <div class="faq-item reveal">
+            <h3>Where is Papa Perez FC based?</h3>
+            <p>The club is based at IMSciences in Peshawar, Khyber Pakhtunkhwa, Pakistan. Its home ground is Aadil's Arena at IMSciences.</p>
+          </div>
+          <div class="faq-item reveal">
+            <h3>Who is the president of Papa Perez FC?</h3>
+            <p>Farhan Aziz has been president since 2026. He also plays as a forward, wearing number 9.</p>
+          </div>
+          <div class="faq-item reveal">
+            <h3>What is the motto of Papa Perez FC?</h3>
+            <p>The slogan is "Loved, Despised, Never Ignored", and the club's guiding principle is "No one is bigger than the club."</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="dark-section">
-      <div class="section-inner">
-        <p class="eyebrow">Get in Touch</p>
-        <h2>Contact Papa Perez FC</h2>
+    <section id="contact" class="section section--alt">
+      <div class="wrap">
+        <p class="eyebrow reveal">04 · Get in Touch</p>
+        <h2 class="reveal" style="--d:.08s">Contact Papa Perez FC</h2>
 
         <div class="contact-grid">
-          <a class="contact-item" href="https://www.instagram.com/papaperezfc?igsh=OG8wYnJqempicmRm" target="_blank" rel="noopener noreferrer">
-            <span class="contact-icon">📸</span>
+          <a class="contact-card contact-card--main reveal" href="https://www.instagram.com/papaperezfc?igsh=OG8wYnJqempicmRm" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+            </span>
             <span class="contact-text">
               <span class="contact-label">Instagram</span>
               <span class="contact-value">@papaperezfc</span>
             </span>
           </a>
 
-          <a class="contact-item" href="https://maps.app.goo.gl/eXdt7QQYYogDN9H47?g_st=aw" target="_blank" rel="noopener noreferrer">
-            <span class="contact-icon">📍</span>
+          <a class="contact-card reveal" style="--d:.08s" href="https://maps.app.goo.gl/eXdt7QQYYogDN9H47?g_st=aw" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
             <span class="contact-text">
               <span class="contact-label">Home</span>
               <span class="contact-value">Aadil's Arena, IMSciences</span>
             </span>
           </a>
 
-          <div class="contact-item contact-item--static">
-            <span class="contact-icon">📱</span>
+          <a class="contact-card reveal" style="--d:.16s" href="tel:+923489843979">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            </span>
             <span class="contact-text">
               <span class="contact-label">Phone</span>
               <span class="contact-value">+92 348 9843979</span>
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -456,44 +401,103 @@
   </main>
 
   <!-- FOOTER -->
-  <footer>
-    <img src="logo.jpg" alt="Papa Perez FC logo" class="footer-logo" loading="lazy"/>
-    <p>© 2026 Papa Perez FC. All Rights Reserved.</p>
-    <p class="footer-sub">Built by AKK &amp; SS</p>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <img src="logo.jpg" alt="Papa Perez FC logo" class="brand-logo" width="40" height="40" loading="lazy"/>
+        <span>Papa Perez FC</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#squad">Squad</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="copy">© 2026 Papa Perez FC. All Rights Reserved.</p>
+      <p class="built">Built by AKK &amp; SS</p>
+    </div>
   </footer>
 
   <script>
     function toggleMenu() {
-      const menu = document.getElementById('mobileMenu');
-      const btn = document.querySelector('.hamburger');
-      const isOpen = menu.classList.toggle('open');
-      btn.setAttribute('aria-expanded', isOpen);
-      btn.classList.toggle('is-open', isOpen);
+      var m = document.getElementById('mobileMenu');
+      var b = document.querySelector('.hamburger');
+      var open = m.classList.toggle('open');
+      b.setAttribute('aria-expanded', open);
+      b.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      b.classList.toggle('is-open', open);
+      document.body.classList.toggle('menu-open', open);
     }
-
-    const sections = document.querySelectorAll('section, header');
-    const navLinks = document.querySelectorAll('nav ul li a');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(s => {
-        if (window.scrollY >= s.offsetTop - 80) current = s.id;
-      });
-      navLinks.forEach(a => {
-        a.classList.remove('active');
-        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
-      });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && document.getElementById('mobileMenu').classList.contains('open')) toggleMenu();
     });
 
-    // Tap-to-flip for touch/keyboard, in addition to hover on desktop
-    document.querySelectorAll('.card-wrapper').forEach(card => {
-      card.addEventListener('click', () => card.classList.toggle('is-flipped'));
-      card.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          card.classList.toggle('is-flipped');
-        }
-      });
-    });
+    (function () {
+      var nav = document.getElementById('nav');
+      var bar = document.getElementById('progress');
+      var ticking = false;
+
+      function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(function () {
+          var y = window.scrollY;
+          var h = document.documentElement.scrollHeight - window.innerHeight;
+          nav.classList.toggle('scrolled', y > 24);
+          bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(y / h, 1) : 0) + ')';
+          ticking = false;
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Scroll reveal
+      var els = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+        els.forEach(function (el) { io.observe(el); });
+      } else {
+        els.forEach(function (el) { el.classList.add('in'); });
+      }
+
+      // Active nav link
+      var links = document.querySelectorAll('.nav-links a');
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              links.forEach(function (a) {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
+              });
+            }
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        document.querySelectorAll('main section').forEach(function (s) { spy.observe(s); });
+      }
+
+      // Hero light follows the pointer (desktop only)
+      var glow = document.querySelector('.hero-glow');
+      var fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (glow && fine && !calm) {
+        var hero = document.querySelector('.hero');
+        var raf = 0, gx = 0, gy = 0;
+        hero.addEventListener('pointermove', function (e) {
+          var r = hero.getBoundingClientRect();
+          gx = e.clientX - r.left; gy = e.clientY - r.top;
+          if (!raf) {
+            raf = requestAnimationFrame(function () {
+              glow.style.transform = 'translate3d(' + gx + 'px,' + gy + 'px,0)';
+              raf = 0;
+            });
+          }
+        });
+      }
+    })();
   </script>
 
 </body>
