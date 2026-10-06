@@ -374,9 +374,9 @@ h2 {
   transform: translateX(-130%); transition: transform 1s var(--ease);
 }
 .player-num {
-  position: absolute; top: 8px; right: 14px; z-index: 2;
+  /* Changed top/right to bottom/right to align with the name block */
+  position: absolute; bottom: 20px; right: 20px; z-index: 2;
   font-family: var(--display); font-weight: 700; line-height: 1;
-  /* Reduced the font size range here */
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   
   /* 1. Add a slight dark tint so it isn't fully transparent against bright photos */
@@ -390,6 +390,8 @@ h2 {
   
   transition: color .5s, transform .5s var(--ease), text-shadow .5s;
 }
+/* Added padding-right: 70px so long names don't crash into the number */
+.player-info { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 20px; padding-right: 70px; }
 .player-info { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 20px; }
 .player-info::before {
   content: ''; display: block; width: 28px; height: 2px; margin-bottom: 12px;
@@ -519,10 +521,13 @@ h2 {
     width: calc(50% - 7px);
   }
   
-  .player-info { padding: 14px; }
+  /* Added right padding on mobile so text doesn't touch the number */
+  .player-info { padding: 14px; padding-right: 50px; }
   .player-name { font-size: 1rem; }
-  /* Reduced font size for mobile screens */
-  .player-num { font-size: 1.8rem; right: 10px; }
+  
+  /* Number positioned at bottom right for mobile */
+  .player-num { font-size: 1.8rem; bottom: 14px; right: 14px; }
+  
   .contact-card { padding: 22px; }
 }
 
