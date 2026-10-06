@@ -374,21 +374,19 @@ h2 {
   transform: translateX(-130%); transition: transform 1s var(--ease);
 }
 .player-num {
-  /* Changed top/right to bottom/right to align with the name block */
   position: absolute; bottom: 20px; right: 20px; z-index: 2;
   font-family: var(--display); font-weight: 700; line-height: 1;
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   
-  /* 1. Add a slight dark tint so it isn't fully transparent against bright photos */
-  color: rgba(7, 7, 6, 0.4); 
+  /* Reverted to fully transparent inside */
+  color: transparent; 
   
-  /* 2. Make the gold outline slightly thicker and brighter */
+  /* Kept the slightly thicker gold outline for a premium look */
   -webkit-text-stroke: 1.5px rgba(240, 207, 122, 0.9);
   
-  /* 3. Add a heavy dark shadow behind the text to separate it from the photo */
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.9), 0 2px 4px rgba(0, 0, 0, 0.8);
+  /* Removed the text-shadow completely */
   
-  transition: color .5s, transform .5s var(--ease), text-shadow .5s;
+  transition: color .5s, transform .5s var(--ease);
 }
 /* Added padding-right: 70px so long names don't crash into the number */
 .player-info { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 20px; padding-right: 70px; }
